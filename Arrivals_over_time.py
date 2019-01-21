@@ -14,9 +14,9 @@ import matplotlib
 # In[43]:
 
 
-jordan = pd.read_excel('./Jordan_refugees.xlsx')
-turkey = pd.read_excel('./Turkey_refugees.xlsx')
-lebanon = pd.read_excel('./Lebanon_refugees.xlsx')
+jordan = pd.read_excel('./data/Jordan_refugees.xlsx')
+turkey = pd.read_excel('./data/Turkey_refugees.xlsx')
+lebanon = pd.read_excel('./data/Lebanon_refugees.xlsx')
 
 yval = np.arange(0,3590000)
 
@@ -40,7 +40,7 @@ plt.ylabel('Total Refugees in Millions', fontsize=18)
 # In[57]:
 
 
-usa = pd.read_excel('./usa_refugees.xlsx')
+usa = pd.read_excel('./data/usa_refugees.xlsx')
 
 
 # In[58]:

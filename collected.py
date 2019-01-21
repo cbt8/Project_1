@@ -8,7 +8,7 @@ from numpy import nan
 # In[54]:
 
 
-lebanon = pd.read_csv('./Lebanon Population.csv')
+lebanon = pd.read_csv('./data/Lebanon Population.csv')
 
 #source = http://www.worldometers.info/world-population/lebanon-population/
 
@@ -16,7 +16,7 @@ lebanon = pd.read_csv('./Lebanon Population.csv')
 # In[50]:
 
 
-refugees_lebanon = pd.read_csv('./Registered Syrian Refugees by Date Leb.csv')
+refugees_lebanon = pd.read_csv('./data/Registered Syrian Refugees by Date Leb.csv')
 
 #source = https://data2.unhcr.org/en/situations/syria/location/71
 
@@ -111,7 +111,7 @@ lebanon
 
 
 
-jordan = pd.read_csv('./Jordan Population.csv', thousands=',')
+jordan = pd.read_csv('./data/Jordan Population.csv', thousands=',')
 
 #source = http://www.worldometers.info/world-population/jordan-population/
 
@@ -119,7 +119,7 @@ jordan = pd.read_csv('./Jordan Population.csv', thousands=',')
 # In[3]:
 
 
-refugees_jordan = pd.read_csv('./Registered Syrian Refugees by Date Jordan.csv', thousands=',')
+refugees_jordan = pd.read_csv('./dta/Registered Syrian Refugees by Date Jordan.csv', thousands=',')
 
 #source = https://data2.unhcr.org/en/situations/syria/location/36
 
@@ -212,7 +212,7 @@ jordan
 #plt.legend()
 
 
-turkey = pd.read_csv('./Turkey Population .csv', thousands=",")
+turkey = pd.read_csv('./data/Turkey Population .csv', thousands=",")
 
 #source = http://www.worldometers.info/world-population/turkey-population/
 
@@ -220,7 +220,7 @@ turkey = pd.read_csv('./Turkey Population .csv', thousands=",")
 # In[3]:
 
 
-refugees_turkey = pd.read_csv('./Registered Syrian Refugees by Date.csv')
+refugees_turkey = pd.read_csv('./data/Registered Syrian Refugees by Date.csv')
 
 #source = https://data2.unhcr.org/en/situations/syria/location/113
 
