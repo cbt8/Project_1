@@ -14,9 +14,9 @@ import matplotlib
 # In[43]:
 
 
-jordan = pd.read_excel('./data/Jordan_refugees.xlsx')
-turkey = pd.read_excel('./data/Turkey_refugees.xlsx')
-lebanon = pd.read_excel('./data/Lebanon_refugees.xlsx')
+jordan = pd.read_excel('data/clean_data/refugees-jordan.xlsx')
+turkey = pd.read_excel('data/clean_data/refugees-turkey.xlsx')
+lebanon = pd.read_excel('data/clean_data/refugees-lebanon.xlsx')
 
 yval = np.arange(0,3590000)
 
