@@ -6,15 +6,15 @@ from numpy import nan
 
 #Here we import the data. Gabby did this using a nice function, which I duplicated here.
 
-dhs = {'table13':pd.read_excel("./data/fy2016_table13.xls", header=3, skipfooter=2, na_values=['-','D'])}
+dhs = {'table13':pd.read_excel("./data/clean_data/fy2016_table13.xls", header=3, skipfooter=2, na_values=['-','D'])}
 def get_data_by_table_number(table_number):
     return dhs.get(f'table{table_number}')
 
-lebanon = pd.read_csv('./Lebanon Population.csv')
+lebanon = pd.read_csv('./clean_data/population-lebanon.csv')
 
 #source = http://www.worldometers.info/world-population/lebanon-population/
 
-refugees_lebanon = pd.read_csv('./Registered Syrian Refugees by Date Leb.csv')
+refugees_lebanon = pd.read_csv('./data/clean_data/syr-reg_ref_by_date-lebanon.csv')
 
 #source = https://data2.unhcr.org/en/situations/syria/location/71
 
@@ -56,10 +56,10 @@ lebanon
 #plt.ylabel('Lebanon population in millions')
 #plt.legend()
 
-jordan = pd.read_csv('./Jordan Population.csv', thousands=',')
+jordan = pd.read_csv('./data/clean_data/population-jordan.csv', thousands=',')
 
 #source = http://www.worldometers.info/world-population/jordan-population/
-refugees_jordan = pd.read_csv('./Registered Syrian Refugees by Date Jordan.csv', thousands=',')
+refugees_jordan = pd.read_csv('./data/raw_data/syr-reg_ref_by_date-jordan.csv', thousands=',')
 
 #source = https://data2.unhcr.org/en/situations/syria/location/36
 
@@ -92,7 +92,7 @@ jordan
 turkey = pd.read_csv('./Turkey Population .csv', thousands=",")
 
 #source = http://www.worldometers.info/world-population/turkey-population/
-refugees_turkey = pd.read_csv('./Registered Syrian Refugees by Date.csv')
+refugees_turkey = pd.read_csv('./data/clean_data/syr-reg_ref_by_date-turkey.csv')
 
 #source = https://data2.unhcr.org/en/situations/syria/location/113
 
